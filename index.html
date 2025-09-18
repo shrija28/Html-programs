@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Button Style Switcher</title>
+    <!-- Default stylesheet -->
+    <link id="pagestyle" rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+    <h1>Welcome to Style Switcher Page</h1>
+    <p>This page changes stylesheets based on which button you click.</p>
+<hr>About this page</h3>
+<p>This is a sample paragrapgh that demonstrates how the first line ins styled differently</p>
+<p>class="highlight" This paragrapgh is highlighted with a background colour and a dashed border</p>
+<p>This paragraph is another paragra[gh to show the effect of the general sibling selector.It gets different font style</p>
+<span>This span element is styled with the child slector</span>
+
+    <div class="button-container">
+        <button onclick="changeStyle('style1.css')">Style 1 </button>
+        <button onclick="changeStyle('style2.css')">Style 2 </button>
+        <button onclick="changeStyle('style3.css')">Style 3 </button>
+        <button onclick="changeStyle('style4.css')">Style 4 </button>
+        <button onclick="index.html">No sheet</button>
+    </div>
+
+    <script>
+        function changeStyle(sheet) {
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+    </script>
+</body>
+</html>
